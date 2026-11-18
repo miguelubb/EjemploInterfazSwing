@@ -7,7 +7,7 @@ public class MenuPrincipal extends JDialog {
     private JButton buttonCancel;
     private JButton ejemploDeSaludoButton;
     private JButton ejemploDeRadioButtonButton;
-    private JButton pendienteButton;
+    private JButton ejemploDeJListButton;
     private JButton salirButton;
 
     public MenuPrincipal() {
@@ -32,6 +32,7 @@ public class MenuPrincipal extends JDialog {
         }, KeyStroke.getKeyStroke(KeyEvent.VK_ESCAPE, 0), JComponent.WHEN_ANCESTOR_OF_FOCUSED_COMPONENT);
         ejemploDeSaludoButton.addActionListener(e-> Saludar.display(this));
         ejemploDeRadioButtonButton.addActionListener(e-> EjemploRadioButtom.display(this));
+        ejemploDeJListButton.addActionListener(e->EjemploJList.display(this));
     }
 
     private void onOK() {

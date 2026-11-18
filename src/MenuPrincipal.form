@@ -49,7 +49,7 @@
           <text value="Ejemplo de radio Button"/>
         </properties>
       </component>
-      <component id="2b1fa" class="javax.swing.JButton" binding="pendienteButton" default-binding="true">
+      <component id="2b1fa" class="javax.swing.JButton" binding="ejemploDeJListButton" default-binding="true">
         <constraints>
           <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false">
             <minimum-size width="40" height="-1"/>
@@ -57,7 +57,7 @@
         </constraints>
         <properties>
           <font name="Comic Sans MS" size="22"/>
-          <text value="pendiente"/>
+          <text value="Ejemplo de JList"/>
         </properties>
       </component>
       <component id="5613c" class="javax.swing.JButton" binding="salirButton" default-binding="true">

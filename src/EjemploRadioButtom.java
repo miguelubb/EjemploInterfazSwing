@@ -48,6 +48,25 @@ public class EjemploRadioButtom extends JDialog {
 
     private void onOK() {
         // add your code here
+       boolean esColon=cristobalColónRadioButton.isSelected();
+       boolean esFecha=a1492RadioButton.isSelected();
+       if(esColon && esFecha){
+           JOptionPane.showMessageDialog(this,
+                   "Ambas respuestas son correctas. Felicitaciones!!!",
+                   "Informacion",
+                   JOptionPane.INFORMATION_MESSAGE);
+       }else if(esColon || esFecha){
+           //al menos una
+           JOptionPane.showMessageDialog(this,
+                   "Solo una respuesta es correcta. Ánimo, sigue estudiando!!!",
+                   "Atención", JOptionPane.WARNING_MESSAGE);
+       }else{
+           //ninguna respuesta correcta
+           JOptionPane.showMessageDialog(this,
+                   "Lamentablemente, ninguna respuesta es correcta",
+                   "Error", JOptionPane.ERROR_MESSAGE);
+
+       }
         dispose();
     }
 

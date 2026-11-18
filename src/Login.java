@@ -15,7 +15,7 @@ public class Login extends JDialog {
     public Login() {
         Usuarios.getInstance().registrarUsuario("admin", "admin");
         setContentPane(contentPane);
-        setModal(true);
+        setModal(true);//una ventana modal, bloquea al resto de las ventanas de la app.
         getRootPane().setDefaultButton(buttonOK);
 
         buttonOK.addActionListener(new ActionListener() {
