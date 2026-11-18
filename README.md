@@ -1,0 +1,1 @@
+Este proyecto es un ejemplo de creación de dialogos con SWING y con Intellij. Tiene fines académicos y no de producción. La finalidad es mostrar el uso básico de múltiples ventanas,con controles básicos.
