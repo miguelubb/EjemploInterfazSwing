@@ -9,10 +9,12 @@ public class MenuPrincipal extends JDialog {
     private JButton ejemploDeRadioButtonButton;
     private JButton ejemploDeJListButton;
     private JButton salirButton;
+    private JButton ejemploJComboBoxButton;
 
     public MenuPrincipal() {
         setContentPane(contentPane);
         setModal(true);
+
         salirButton.addActionListener(e-> onCancel());
 
 
@@ -33,7 +35,9 @@ public class MenuPrincipal extends JDialog {
         ejemploDeSaludoButton.addActionListener(e-> Saludar.display(this));
         ejemploDeRadioButtonButton.addActionListener(e-> EjemploRadioButtom.display(this));
         ejemploDeJListButton.addActionListener(e->EjemploJList.display(this));
+        ejemploJComboBoxButton.addActionListener(e->EjemploComboBox.display(this));
     }
+
 
     private void onOK() {
         // add your code here
